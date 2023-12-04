@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-color: #0a192f;
+    padding: 0 80px;
+}
+
+
+
+/*header */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.title p{
+    font-size: 28px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.links{
+    margin-top: 27px;
+}
+.links a,button{
+    margin-left: 34px;
+    text-decoration: none;
+    font-family: Consolas;
+    color: rgb(217, 206, 255);
+    transition: 0.3s ease;
+}
+.links a span{
+    color: rgb(224, 241, 199);
+}
+.links a:hover{
+    color: rgb(224, 241, 199);
+}
+.links button{
+    background-color: #0a192f;
+    border: 1px solid rgb(224, 241, 199);
+    border-radius: 6px;
+    padding: 6px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.links button:hover{
+    transform: scale(1);
+    background-color: #132643;
+}
+
+/* Section */
+section{
+    margin-top: 20px;
+}
+section span{
+    color: rgb(224, 241, 199);
+    font-family: Consolas;
+    font-size: 17px;
+}
+
+section .firstProject{
+    margin-top: 50px;
+}
+section .firstProject .image img{
+    width: 500px;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    opacity: 70%;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-left: 50px;
+}
+section .firstProject .image img:hover{
+    opacity: 100%;
+    transform: scale(1.01);
+}
+
+section .firstProject .description{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    float: right;
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+}
+section .firstProject #programmed{
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    float: left;
+}
+section .firstProject .programmed{
+    width: 260px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    float: right;
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 36px;
+    padding-left: 20px;
+    height: 123px;
+}
+section .firstProject .programmed #one{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+    color: rgb(184, 184, 244);
+    float: left;
+}
+section .firstProject button{
+    float: right;
+    margin-top: -34px;
+    background-color: #0a192f;
+    border: 1px solid rgb(224, 241, 199);
+    border-radius: 6px;
+    padding: 6px 15px;
+    font-size: 16px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.secondProject{
+    margin-top: 400px;
+}
+section .secondProject .image img{
+    width: 500px;
+    float: right;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    opacity: 70%;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-right: 50px;
+}
+section .secondProject .image img:hover{
+    opacity: 100%;
+    transform: scale(1.01);
+}
+
+section .secondProject .description{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    float: left;
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+}
+section .secondProject #programmed{
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    float: left;
+}
+section .secondProject .programmed{
+    width: 260px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 36px;
+    padding-left: 20px;
+    height: 123px;
+}
+section .secondProject .programmed #one{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+    color: rgb(184, 184, 244);
+    float: right;
+}
+section .secondProject button{
+    float: right;
+    margin-top: -34px;
+    background-color: #0a192f;
+    border: 1px solid rgb(224, 241, 199);
+    border-radius: 6px;
+    padding: 6px 15px;
+    font-size: 16px;
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+section .thirdProject{
+    margin-top: 800px;
+}
+section .thirdProject .image img{
+    width: 500px;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    opacity: 70%;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-left: 50px;
+}
+section .thirdProject .image img:hover{
+    opacity: 100%;
+    transform: scale(1.01);
+}
+
+section .thirdProject .description{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    float: right;
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+}
+section .thirdProject #programmed{
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    float: left;
+}
+section .thirdProject .programmed{
+    width: 260px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    float: right;
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 36px;
+    padding-left: 20px;
+    height: 123px;
+}
+section .thirdProject .programmed #one{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+    color: rgb(184, 184, 244);
+    float: left;
+}
+section .thirdProject button{
+    float: right;
+    margin-top: -34px;
+    background-color: #0a192f;
+    border: 1px solid rgb(224, 241, 199);
+    border-radius: 6px;
+    padding: 6px 15px;
+    font-size: 16px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.forthProject{
+    margin-top: 1200px;
+}
+section .forthProject .image img{
+    width: 500px;
+    float: right;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    opacity: 70%;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-right: 50px;
+}
+section .forthProject .image img:hover{
+    opacity: 100%;
+    transform: scale(1.01);
+}
+
+section .forthProject .description{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    float: left;
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+}
+section .forthProject #programmed{
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    float: left;
+}
+section .forthProject .programmed{
+    width: 260px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+    background-color: #132643;
+    color: rgb(184, 184, 244);
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 36px;
+    padding-left: 20px;
+    height: 123px;
+}
+section .forthProject .programmed #one{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+    color: rgb(184, 184, 244);
+    float: left;
+}
+section .forthProject button{
+    margin-top: -34px;
+    background-color: #0a192f;
+    border: 1px solid rgb(224, 241, 199);
+    border-radius: 6px;
+    padding: 6px 15px;
+    font-size: 16px;
+    float: left;
+    margin-left: -20px;
+    cursor: pointer;
+    margin-top: 110px;
+}
+</style>
+<body>
+    <header>
+        <div class="title">
+            <p>Soufian {/}</p>
+        </div>
+        <div class="links">
+            <a href="cv.html"><span>01. </span>About</a>
+            <a href=""><span>02. </span>Experience</a>
+            <a href=""><span>03. </span>Work</a>
+            <a href="contact.html"><span>04. </span>Contact</a>
+            <button onclick="showResume()">Resume</button>
+        </div>
+    </header>
+    <section>
+        <center>
+            <span>Some Of my works!!</span>
+
+            <div class="firstProject">
+                <div class="image">
+                    <img src="firstProject.png">
+                </div>
+                <div class="description">
+                    <p> The platform allows teachers to create and share notes with their students,
+                         and students can access these notes using their unique username
+                         and password.The system ensures that only authorized users (students and teachers) can log in.</p>
+                </div>
+                <div class="programmed">
+                    <span id="programmed">Programmed Using:</span><br>
+                    <br>
+                    <span id="one">Python Programming language</span><br>
+                    <span id="one">Tkinter Library</span><br>
+                    <span id="one">CSV Library</span><br>
+                </div>
+                <button>Download!</button>
+            </div>
+
+            <div class="secondProject">
+                <div class="image">
+                    <img src="second.png">
+                </div>
+                <div class="description">
+                    <p> The project is a simple food ordering application
+                         built using Tkinter in Python. The application allows users to create accounts,
+                          log in, and order food or drinks. <br>
+                          then they Can click on pay Button to pay the price.
+
+                    </p>
+                </div>
+                <div class="programmed">
+                    <span id="programmed">Programmed Using:</span><br>
+                    <br>
+                    <span id="one">Python Programming language</span><br>
+                    <span id="one">Tkinter Library</span><br>
+                    <span id="one">CSV Library</span><br>
+                    <span id="one">Pillow library</span>
+                </div>
+                <button>Download!</button>
+            </div>
+
+            <div class="thirdProject">
+                <div class="image">
+                    <img src="thirddProject.png">
+                </div>
+                <div class="description">
+                    <p> This project introduces fundamental concepts of user authentication,
+                         balance tracking, and basic transactions, providing a hands-on understanding
+                          of these principles</p>
+                </div>
+                <div class="programmed">
+                    <span id="programmed">Programmed Using:</span><br>
+                    <br>
+                    <span id="one">Python Programming language</span><br>
+                    <span id="one">Tkinter Library</span><br>
+                    <span id="one">CSV Library</span><br>
+                </div>
+                <button>Download!</button>
+            </div>
+
+            <div class="forthProject">
+                <div class="image">
+                    <img src="forthProject.png">
+                </div>
+                <div class="description">
+                    <p> The project is a simple food ordering application
+                         built using Tkinter in Python. The application allows users to create accounts,
+                          log in, and order food or drinks. <br>
+                          then they Can click on pay Button to pay the price.
+
+                    </p>
+                </div>
+                <div class="programmed">
+                    <span id="programmed">Programmed Using:</span><br>
+                    <br>
+                    <span id="one">HTML</span><br>
+                    <span id="one">CSS</span><br>
+                    <span id="one">Javascript </span><br>
+                </div>
+                <button>Download!</button>
+            </div>
+        </center>
+    </section>
+    <script>
+        function showResume(){
+            window.location.href = "tp4.html";
+        }
+    </script>
+</body>
+</html>
